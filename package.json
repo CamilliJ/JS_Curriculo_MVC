@@ -1,0 +1,26 @@
+{
+  "name": "js_curriculo_mvc",
+  "version": "1.0.0",
+  "description": "Primeiro Currículo MVC em Express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "iniciar": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CamilliJ/JS_Curriculo_MVC.git"
+  },
+  "author": "Camilli J",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CamilliJ/JS_Curriculo_MVC/issues"
+  },
+  "homepage": "https://github.com/CamilliJ/JS_Curriculo_MVC#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "nodemon": "^2.0.18"
+  }
+}
