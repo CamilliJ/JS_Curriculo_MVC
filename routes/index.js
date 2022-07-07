@@ -1,11 +1,11 @@
 const express = require('express');
 const router = express.Router();
 
-// Escrevendo no Body
-app.get('/curriculo', (_req, res, next) => {
-    const curriculoData = CurriculoControler.getData();
-    res.render('curriculo', curriculoData);
+router.get('/', (req, res, next) => {
+    res.render('index', {
+        title: "Meu primeiro servidor Express",
+        version: "0.0.0"
+    });
 });
-
 
 module.exports = router;

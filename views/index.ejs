@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" href="/styles/initial.css">
-    </head>
-    <body>
-        <main>
-            <h1 class="main-title"><%= title %></h1>
-            <p class="welcome"> Bem vindo(a) ao <%= title %> </p>
-        </main>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/initial.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div class="typed-out">
+                <%= title %>
+            </div>
+        </div>
+        <p class="welcome"> Bem vindo(a) ao <%= title %>!
+        </p>
+        <a href="/curriculo">Meu currículo</a>
         <footer>
-            <p class="version"> Versão <%= version %> </p>
+            <p class="version"> Versão <%= version %>
+            </p>
         </footer>
-    </body>
+    </main>
+
+</body>
+
 </html>

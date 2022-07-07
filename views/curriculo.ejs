@@ -1,46 +1,85 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title><%= title %></title>
-        <link rel="stylesheet" href="/styles/main.css">
-    </head>
-    <body>
-        <main>
-            <h1 class="main-title"><%= title %></h1>
-            <p class="welcome"> Bem vindo(a) ao <%= title %> </p>
-            <p class="name"> <%= name %> </p>
-            <p class="profession"> <%= profession %> </p>
-            <p class="description"> <%= description %> </p>
 
-            <ul>
-                <% experience.map(experience => { %>
-                    <li>
-                        <div>
-                            <span> <%= experience.company %> </span>
-                            <span> <%= experience.office %> </span>
-                            <br>
-                            <span> <%= experience.description %> </span>
-                        </div>
-                    </li>
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <main>
+        <div class="linha">
+            <div class="container">
+                <div class="typed-out">
+                    <%= title %>
+                </div>
+            </div>
+            <div class="infos">
+                <p class="name">
+                    <%= name %>
+                </p>
+                <p class="profession">
+                    <%= profession %>
+                </p>
+            </div>
+        </div>
+
+        <p class="description">
+            <%= description %>
+        </p>
+
+        <div class="experiencias">Experiências</div>
+
+        <ul>
+            <% experience.map(experience=> { %>
+                <li>
+                    <div class="item">
+                        <span class="nome_empresa"> → <%= experience.company %> </span> <br>
+                        <span class="cargo">Cargo: <%= experience.office %> </span>
+                        <br>
+                        <span class="descricao">
+                            <%= experience.description %>
+                        </span>
+                    </div>
+                </li>
                 <% }); %>
-            </ul>
-            <ul>
-                <% education.map(education => { %>
-                    <li>
-                        <div>
-                            <span> <%= education.institution %> </span>
-                            <br>
-                            <span> <%= education.description %> </span>
-                        </div>
-                    </li>
+        </ul>
+
+        <div class="experiencias">Escolaridade </div>
+        <ul>
+            <% education.map(education=> { %>
+                <li>
+                    <div class="item">
+                        <span class="nome_empresa"> → <%= education.institution %> </span>
+                        <br>
+                        <span class="descricao">
+                            <%= education.description %>
+                        </span>
+                    </div>
+                </li>
                 <% }); %>
-            </ul>
-            <% skills.map(skills => { %>
-                <li> <%= skills %> </li>
+        </ul>
+
+        <div class="experiencias">Experiências</div>
+        <div class="skilss"></div>
+            <% skills.map(skills=> { %>
+                <li class="item-skil">
+                    <%= skills %>
+                </li>
             <% }); %>
-        </main>
-        <footer>
-            <p class="version"> Versão <%= version %> </p>
-        </footer>
-    </body>
+        </div>
+    </main>
+    <footer>
+        <div class="nome"> <%= name %> </div>
+        <div class="redes-sociais"> 
+            <div><a href="mailto:joannescamilli1@gmail.com" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="Email" class="image"></a></div>
+            <div><a href="https://github.com/CamilliJ" target="_blank" rel="noopener noreferrer"><img src="github.png" alt="Email" class="image"></a></div>
+            <div><a href="https://www.instagram.com/caahjoannes/" target="_blank" rel="noopener noreferrer"><img src="instagram.png" alt="Email" class="image"></a></div>
+            <div><a href="https://www.linkedin.com/in/camilli-joannes-106113206/" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="Email" class="image"></a></div>
+        </div>
+    </footer>
+</body>
+
 </html>

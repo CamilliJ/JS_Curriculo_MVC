@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Didact Gothic', sans-serif;
+}
+
+main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2{
+    color: #02735E;
+    margin-top: 0;
+    margin-bottom: 70px;
+    font-size: 40px;
+
+}
+
+h1{
+    color: #033b32;
+    font-size: 60px;
+}
+
+
+footer {
+    margin-top: 100px;
+    height: 100px;
+    background-color: #02735E;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 160px;
+    padding-right: 160px;
+    padding-top: 60px;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 80%;
+}
+
+.nome{
+    font-size: 25px;
+}
+
+.image{
+    width: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.redes-sociais{
+    display: flex;
+}
+
+.voltar {
+    text-decoration: none;
+    color: white;
+    background-color: #025042;
+    padding: 15px 40px;
+    margin-bottom: 160px;
+}

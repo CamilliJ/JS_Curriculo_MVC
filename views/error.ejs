@@ -1,3 +1,32 @@
-<h1> <$= message $> </h1>
-<h2> <$= error.status $> </h2>
-<h2> <$= error.stack $> </h2>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Error 404
+    </title>
+    <link rel="stylesheet" href="/styles/error.css">
+</head>
+
+<body>
+    <main>
+        <h1><%= message %></h1>
+        <h2><%= error.status %></h2>
+
+        <a href="/" class="voltar"> Voltar </a>
+    </main>
+    <footer>
+        <div class="nome"> Camilli Joannes </div>
+        <div class="redes-sociais"> 
+            <div><a href="mailto:joannescamilli1@gmail.com" target="_blank" rel="noopener noreferrer"><img src="email.png" alt="Email" class="image"></a></div>
+            <div><a href="https://github.com/CamilliJ" target="_blank" rel="noopener noreferrer"><img src="github.png" alt="Email" class="image"></a></div>
+            <div><a href="https://www.instagram.com/caahjoannes/" target="_blank" rel="noopener noreferrer"><img src="instagram.png" alt="Email" class="image"></a></div>
+            <div><a href="https://www.linkedin.com/in/camilli-joannes-106113206/" target="_blank" rel="noopener noreferrer"><img src="linkedin.png" alt="Email" class="image"></a></div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
